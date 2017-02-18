@@ -3,7 +3,46 @@
     <head>
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     </head>
-    <body>
+    <body ng-controller="indexCtrl" ng-cloak="">
+
+        <md-toolbar md-scroll-shrink>
+            <div class="md-toolbar-tools">
+                <h3>
+                    <span>Toolbar</span>
+                </h3>
+            </div>
+        </md-toolbar>
+
+        <section layout="row" flex>
+            <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+                <md-toolbar class="md-theme-indigo">
+                    <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+                </md-toolbar>
+                <md-content layout-margin>
+                    <p>
+                        This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
+                    </p>
+                    <md-button ng-click="toggleLeft()" class="md-accent">
+                        Close this Sidenav
+                    </md-button>
+                </md-content>
+            </md-sidenav>
+
+            <md-content flex layout-padding>
+                <div layout="column" layout-align="top center">
+                    <p>
+                        Developers can also disable the backdrop of the sidenav.<br/>
+                        This will disable the functionality to click outside to close the sidenav.
+                    </p>
+                    <div>
+                        <md-button ng-click="toggleLeft()" class="md-raised">
+                            Toggle Sidenav
+                        </md-button>
+                    </div>
+                </div>
+            </md-content>
+        </section>
+
         <div>
             <label>Name:</label>
             <input type="text" ng-model="yourName" placeholder="Enter a name here">
@@ -11,13 +50,16 @@
             <h1>Hello {[{yourName}]}!</h1>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <!-- Include -->
+        <div>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
 
-        <!-- Angular Material Library -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+            <!-- Angular Material Library -->
+            <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+            <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+        </div>
     </body>
 </html>

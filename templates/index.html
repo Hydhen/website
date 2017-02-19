@@ -25,6 +25,9 @@
             <md-sidenav md-disable-backdrop class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
                 <md-toolbar md-scroll-shrink>
                     <div class="md-toolbar-tools">
+                        <md-button id="menuLeftBtn" class="md-icon-button" aria-label="Settings" ng-click="toggleLeft()">
+                            <i class="material-icons">arrow_back</i>
+                        </md-button>
                         <div flex></div>
                         <h3>
                             <span>Loïc Juillet</span>
@@ -46,9 +49,6 @@
                         </h2>
                         <div flex></div>
                     </section>
-                    <!--<md-button ng-click="toggleLeft()" class="md-accent">
-                        Close this Sidenav
-                    </md-button>-->
                 </md-content>
             </md-sidenav>
 

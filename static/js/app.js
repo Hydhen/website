@@ -1,8 +1,12 @@
 var app = angular.module("app", ['ngMaterial'])
 
-app.config(function($interpolateProvider) {
+app.config(function($interpolateProvider, $mdThemingProvider) {
     $interpolateProvider.startSymbol('{[{');
     $interpolateProvider.endSymbol('}]}');
+    $mdThemingProvider.theme('default')
+        .primaryPalette('green')
+        .accentPalette('orange')
+        .dark();
 });
 
 app.controller('indexCtrl', function ($scope, $timeout, $mdSidenav) {

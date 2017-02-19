@@ -6,12 +6,12 @@ app.config(function($interpolateProvider) {
 });
 
 app.controller('indexCtrl', function ($scope, $timeout, $mdSidenav) {
-    $scope.toggleLeft = buildToggler('left');
-    $scope.toggleRight = buildToggler('right');
-
-    function buildToggler(componentId) {
-        return function() {
-            $mdSidenav(componentId).toggle();
-        };
-    }
+    $scope.toggleLeft =  function() {
+        $mdSidenav('left').toggle();
+    };
 });
+
+// Click on sideNav button after loading
+setTimeout(function() {
+    document.getElementById('menuLeftBtn').click()
+ }, 0);

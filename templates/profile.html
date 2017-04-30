@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+{% endblock %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block body %}
+    <div class="container profile">
+        <div class="row">
+            <div class="col col-lg-3">
+                <img class="profile-img" src="{{ url_for('static', filename='images/profil.jpg') }}" alt="Loïc Juillet">
+            </div>
+            <div class="col">
+                <p><h4>Loïc Juillet</h4></p>
+                <p><h6>Curious Developer & Dark Side cookie baker</h6></p>
+                <p>Passionate by innovation and new technologies, I like to pass some time asking question and trying to solve them</p>
+            </div>
+        </div>
+        <div class="row profile-description">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <p><h6>Main Languages</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-csharp.png') }}" alt="C# Language">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-python.png') }}" alt="Python Language">
+
+                        <p><h6>Other Languages</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-c.png') }}" alt="C Language">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-cpp.png') }}" alt="CPP Language">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-shell.png') }}" alt="Shell Language">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/lang-swift.png') }}" alt="Swift Language">
+                    </div>
+                    <div class="col">
+                        <p><h6>Game Development</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/unity.png') }}" alt="Unity">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/unreal-engine-4.png') }}" alt="Unreal Engine 4">
+                        <p><h6>Embedded</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/arduino.png') }}" alt="Arduino">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/raspberry.png') }}" alt="Raspberry">
+                    </div>
+                    <div class="col">
+                        <p><h6>Events</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/global-game-jam.png') }}" alt="Global Game Jam">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/paris-games-week.png') }}" alt="Paris Games Week">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/makerfaire.png') }}" alt="MakerFaire">
+                        <p><h6>Interest</h6></p>
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/bulb.png') }}" alt="Innovate">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/accessibility.png') }}" alt="Accessibility">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/hiking.png') }}" alt="Hiking">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/archery.png') }}" alt="Archery">
+                        <img class="profile-icon" src="{{ url_for('static', filename='images/plane.png') }}" alt="Travel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

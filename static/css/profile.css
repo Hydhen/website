@@ -1,0 +1,20 @@
+.profile {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.profile-description {
+    margin-top: 20px;
+}
+
+.profile-icon {
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

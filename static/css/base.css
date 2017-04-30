@@ -1,0 +1,16 @@
+html {
+    background-color: #303034;
+}
+
+body {
+    background-color: #303034;
+    color: white;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.dark-navbar {
+    background-color: #131212!important;
+}

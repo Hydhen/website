@@ -11,6 +11,10 @@ nav {
     margin-bottom: 20px;
 }
 
+hr {
+    background-color: white;
+}
+
 .dark-navbar {
     background-color: #131212!important;
 }

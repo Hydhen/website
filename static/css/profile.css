@@ -1,7 +1,5 @@
 .profile {
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px 50px;
 }
 
 .profile-img {
@@ -9,7 +7,12 @@
 }
 
 .profile-description {
-    margin-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profile-section {
+    margin-top: 50px;
 }
 
 .profile-icon {
@@ -17,4 +20,9 @@
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+}
+
+.profile-history {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

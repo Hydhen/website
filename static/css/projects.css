@@ -1,0 +1,29 @@
+a {
+    color: rgb(75, 170, 251);
+}
+
+.projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.projects-project {
+    margin-bottom: 50px;
+}
+
+.projects-img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.projects-row {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.projects-icon {
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

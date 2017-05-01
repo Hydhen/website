@@ -1,1 +1,130 @@
 {% extends "base.html" %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+{% block title %}
+    Projects
+{% endblock %}
+
+{% block body %}
+    <div class="container projects">
+        <div class="row projects-project">
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/redrunner/splash.png') }}" alt="RedRunner">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>Phrrr</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/unity.png') }}" alt="Unity">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/arduino.png') }}" alt="Arduino">
+                    </div>
+                </div>
+                <hr>
+                <p>2017, <i>Scientific GameJam</i></p>
+                <p>TODO</p>
+            </div>
+            <div class="col col-1"></div>
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/redrunner/splash.png') }}" alt="RedRunner">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>RedRunner</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/unity.png') }}" alt="Unity">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/arduino.png') }}" alt="Arduino">
+                    </div>
+                </div>
+                <hr>
+                <p>2017, <i>GlobalGameJam</i></p>
+                <p>RedRunner is a runner game, inspired by 30’s ~ 80’s cartoon. Run, avoid enemies and traps. Pay also attention to your old cathodic screen ! You’re not safe about interferences which can disturb your race ! Adjust your screen settings using the potentiometer while running.</p>
+            </div>
+        </div>
+        <div class="row projects-project">
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/moug/moug.jpg') }}" alt="Moug">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>Moug</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/raspberry.png') }}" alt="Raspberry">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/nodemcu.png') }}" alt="NodeMCU">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/3d-printer.png') }}" alt="3D Printing">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/transistor.png') }}" alt="Electronic">
+                    </div>
+                </div>
+                <hr>
+                <p>2016, <i>EPITECH Innovation HUB</i></p>
+                <p>Moug is an IoT platform for kids to play with during break. Children have to wear a band which communicate with a station in the playground.</p>
+            </div>
+            <div class="col col-1"></div>
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/moug/moug.jpg') }}" alt="Moug">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>Speakrine</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/arduino.png') }}" alt="Arduino">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/wrench.png') }}" alt="Hand work">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/transistor.png') }}" alt="Electronic">
+                    </div>
+                </div>
+                <hr>
+                <p>2016, <i>EPITECH Innovation HUB</i></p>
+                <p>TODO</p>
+            </div>
+        </div>
+        <div class="row projects-project">
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/will-hue-survive/philips-hue.jpg') }}" alt="Will Hue Survive">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>Will Hue Survive</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/unity.png') }}" alt="Unity">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/philips-hue.png') }}" alt="Philips Hue">
+                    </div>
+                </div>
+                <hr>
+                <p>2016, <i>EPITECH Innovation HUB</i></p>
+                <p>
+                    Will Hue Survive is a concluded experimentation. We tried to use the Philips Hue as an extension of the game world. If you want to build a game using it, don't expect to have nice thunder effect, it was very random on our project, since the light doesn't isn't reactive fast enough.
+                    But if you want to build something like an external radar, it can do it nicely. <br>
+                    For instance, we used them in a demo scene taking place in a car moving forward under street lamps.
+                </p>
+            </div>
+            <div class="col col-1"></div>
+            <div class="col">
+                <img class="projects-img" src="{{ url_for('static', filename='images/les-alibis/sphere.jpg') }}" alt="Will Hue Survive">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h5>Les Alibis</h5>
+                    </div>
+                    <div class="col text-right">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/lang-python.png') }}" alt="Python">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/wrench.png') }}" alt="Hand work">
+                        <img class="projects-icon" src="{{ url_for('static', filename='images/3d-printer.png') }}" alt="3D Printing">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <p>2015, <i>EPITECH Innovation HUB</i></p>
+                    </div>
+                    <div class="col col-2 text-right">
+                        <a href="http://atelierdeparis.org/fr/elodie-sicard/les-alibis">More</a>
+                    </div>
+                </div>
+                <p>
+                    TODO
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
